@@ -1,0 +1,125 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #7c7c7c2b;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.loading::after{
+    content: 'Loading';
+    font-style: italic;
+    font-size: 30px;
+}
+.current{
+    visibility: hidden;
+    height: 20px;
+}
+.current-box{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgContainer{
+    display: flex;
+    align-items: center;
+}
+.current-description{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.weather{
+    padding: 2em;
+    margin: 1em;
+    width: 100%;
+    border-radius: 30px;
+    max-width: fit-content;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.786);
+}
+.weather h2{
+    font-size: 30px;
+}
+.weather h1{
+    margin-bottom: 10px;
+}
+
+.forecast{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.search {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+input[type="text"] {
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 1em;
+    font-size: 120%;
+    border-radius: 30px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.786);
+}
+.search button{
+    width: 61px;
+    padding: 0;
+    font-size: 150%;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.786);
+    transition: 0.2 ease-in-out;
+}
+.search button:hover{
+    background-color: rgba(0, 0, 0, 0.854);
+    cursor: pointer;
+}
+
+.forecast-box{
+    justify-items: center;
+    margin: auto;
+}
+.view{
+    visibility: hidden;
+}
+.forecaster{
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.786);
+}
+.forecaster h2{
+    font-size: 20px;
+}
+.forecaster h2 span{
+    display: block;
+}
+.location span{
+    text-transform: capitalize;
+}
